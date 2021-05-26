@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Automation UniversitySuite">
+    <test thread-count="5" name="Depends On Methods Attribute Test">
+        <classes>
+            <class name="annotations.DependsOnMethodPass">
+                <methods>
+                    <exclude name="test4_SearchUser"/>
+                </methods>
+            </class>
+         
+        </classes>
+    </test>
+</suite>
